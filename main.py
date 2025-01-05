@@ -25,7 +25,7 @@ def synthesize_speech_to_file(text, output_path):
         return True
     
     except KeyError:
-        print("Audio stream not available in the response.")
+        print("Could not stream audio.")
         return False
     
     except IOError as e:
